@@ -1,0 +1,6 @@
+HOW JAVASCRIPT CODE IS executed
+
+
+When a JavaScript program runs, a global execution context is created. Every execution context is created in two phases: the memory creation phase and the code execution phase. In the memory creation phase, memory space is allocated for variables and functions. Variables are stored with a special placeholder value undefined, while functions are stored with their entire code. In the code execution phase, the code runs line by line, and variables are assigned their actual values.
+
+When a function is invoked, it creates a new execution context, which also goes through the memory creation and code execution phases. Functions in JavaScript act like mini-programs, each having their own execution context, which is managed using the call stack.
