@@ -1,0 +1,1 @@
+Everything in JavaScript happens inside execution context. The execution context has two component Memory component and Code component. The memory component is also called variable environment and code component is also called thread of execution.
