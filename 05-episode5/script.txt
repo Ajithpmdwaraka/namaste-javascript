@@ -1,0 +1,5 @@
+Along with the creation of the global execution context, the global object window (in browsers) is also created. It contains all the variables and functions declared in the global scope. When we create any variable or function in the global scope using var, it automatically becomes a property of the window object. For example, if you declare var a = 10;, then you can also access it as window.a.
+
+However, variables declared with let or const in the global scope do not get attached to the window object. They are stored in a different memory space called the Script scope.
+
+The this keyword in the global context also refers to the window object (in non–strict mode). But in strict mode ('use strict'), the value of this in the global scope is undefined.
