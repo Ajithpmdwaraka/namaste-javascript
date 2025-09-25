@@ -1,11 +1,14 @@
 
-getName();
-console.log(x);
+console.log(a); // undefined (var is hoisted)
+var a = 10;
 
-var x = 8;
+console.log(b); // ReferenceError (TDZ)
+let b = 20;
 
-function getName() {
-    console.log("Namaste JavaScript");
+sayHello(); // Works, because function declarations are hoisted
+function sayHello() {
+  console.log("Hello World!");
 }
 
-// Hoisting is a phenomen in javascript that allows to access varibles and function even before it is intialized without any error, it is because even before the code is executed memory is allocated variables and function during the memory creation phase
+
+// Hoisting is a phenomenon in javascript that allows to access varibles and function even before it is intialized without any error, it is because even before the code is executed memory is allocated variables and function during the memory creation phase
