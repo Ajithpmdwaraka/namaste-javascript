@@ -6,4 +6,4 @@ console.log(a);
 a = 10;
 
 console.log(b);
-//Shows reference error as the varibale is not declared adn not allocated any memory
+//Shows reference error as the varibale is not declared and not allocated any memory
